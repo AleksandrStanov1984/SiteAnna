@@ -21,6 +21,11 @@ class MainController extends Controller
         return view('review');
     }
 
+    public function ourContacts()
+    {
+        return view('ourContacts');
+    }
+
     public function review_check(Request $request)
     {
         $valid = $request->validate([

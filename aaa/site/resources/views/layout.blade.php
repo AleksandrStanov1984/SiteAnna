@@ -11,20 +11,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../resources/css/app.scss">
     <title>@yield('title')</title>
 </head>
 
 <body class="bg-dark text-white">
 
 <div style="font-family:Verdana, Arial, Helvetica, sans-serif;" class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-dark text-white border-bottom shadow-sm">
-    <h5 class="my-0 mr-md-auto font-weight-normal " >Студия Красоты Анны Милишь</h5>
+    <h5 class="my-0 mr-md-auto font-weight-normal " data-toggle="tooltip" data-placement="top" title="Студия Красоты Анны Милишь">Студия Красоты Анны Милишь</h5>
     <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-white" href="home">Главная</a>
-        <a class="p-2 text-white" href="#">Enterprise</a>
-        <a class="p-2 text-white" href="#">Support</a>
-        <a class="p-2 text-white" href="about">Про нас</a>
+        <a class="p-2 text-white" href="home" data-toggle="tooltip" data-placement="top" title="Главная">Главная</a>
+        <a class="p-2 text-white" href="#" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Enterprise</a>
+        <a class="p-2 text-white" href="ourContacts" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Контакты</a>
+        <a class="p-2 text-white" href="about" data-toggle="tooltip" data-placement="top" title="Про нас">Про нас</a>
     </nav>
-    <a class="btn btn-warning" href="review">Отзывы</a>
+    <a class="btn btn-warning" href="review" data-toggle="tooltip" data-placement="top" title="Отзывы">Отзывы</a>
 </div>
 
 {{--<div class="embed-responsive embed-responsive-21by9">--}}
@@ -62,8 +63,18 @@
 <div class="container">
     @yield('main_content')
 </div>
+<div class="footer">
+    @yield('footer_content')
+</div>
+<div>
+    <div>
+        <a class="btn btn-social-icon btn-sm btn-instagram">
+            <span class="fa fa-facebook"></span>
+        </a>
+    </div>
 
-
+<div id="footer" style="margin-bottom: 50px; margin-top: 50px"> &copy; Stanov A.</div>
+</div>
 
 </body>
 </html>
