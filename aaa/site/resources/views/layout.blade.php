@@ -166,8 +166,8 @@
         <div class="row">
             <div>
                 <ul class="social-network social-circle">
-                    <li><a href="#" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/anna_colorist_stilist/?hl=ru" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/odessasvadba" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
                     <li><a href="#" class="icoGoogle" title="YouTube"><i class="fa fa-youtube"></i></a></li>
                     <li><a href="#" class="icoTwitter" title="Skype"><i class="fa fa-skype"></i></a></li>
                 </ul>
