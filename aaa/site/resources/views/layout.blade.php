@@ -61,12 +61,12 @@
             display:inline-block;
             position:relative;
             margin:0 auto 0 auto;
-            -moz-border-radius:50%;
-            -webkit-border-radius:50%;
-            border-radius:50%;
+            -moz-border-radius:30%;
+            -webkit-border-radius:30%;
+            border-radius:30%;
             text-align:center;
-            width: 50px;
-            height: 50px;
+            width: 30px;
+            height: 30px;
             font-size:20px;
             background-color: #D3D3D3;
         }
@@ -110,7 +110,7 @@
         <a class="p-2 text-white" href="home" data-toggle="tooltip" data-placement="top" title="Главная">Главная</a>
         <a class="p-2 text-white" href="#" data-toggle="tooltip" data-placement="top"
            title="Tooltip on top">Enterprise</a>
-        <a class="p-2 text-white" href="ourContacts" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Контакты</a>
+        <a class="p-2 text-white" href="ourContacts" data-toggle="tooltip" data-placement="top" title="Контакты">Контакты</a>
         <a class="p-2 text-white" href="about" data-toggle="tooltip" data-placement="top" title="Про нас">Про нас</a>
     </nav>
     <a class="btn btn-warning" href="review" data-toggle="tooltip" data-placement="top" title="Отзывы">Отзывы</a>
@@ -153,10 +153,6 @@
 </div>
 
 
-
-
-
-
 <div class="footer">
     @yield('footer_content')
 </div>
@@ -166,10 +162,15 @@
         <div class="row">
             <div>
                 <ul class="social-network social-circle">
-                    <li><a href="https://www.instagram.com/anna_colorist_stilist/?hl=ru" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="https://www.facebook.com/odessasvadba" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#" class="icoGoogle" title="YouTube"><i class="fa fa-youtube"></i></a></li>
-                    <li><a href="#" class="icoTwitter" title="Skype"><i class="fa fa-skype"></i></a></li>
+                    <li>
+                        <a href="https://www.instagram.com/anna_colorist_stilist/?hl=ru" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/odessasvadba" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="icoGoogle" title="YouTube"><i class="fa fa-youtube" title="YouTube"></i></a>
+                    </li>
                 </ul>
             </div>
         </div>

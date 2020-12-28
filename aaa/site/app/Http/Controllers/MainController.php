@@ -4,10 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Models\ContactDB;
 use Illuminate\Http\Request;
-//use App\Models\ContactDB;
+
 
 class MainController extends Controller
 {
+
     public function home()
     {
         return view('home');
@@ -16,7 +17,12 @@ class MainController extends Controller
     public function about()
     {
         $reviews = new ContactDB();
-        return view('about', ['reviews'=>$reviews->all()]);
+        $countReview = $reviews->all();
+        $count = 0;
+        foreach ($countReview as $c){
+            $count++;
+        }
+        return view('about', ['count'=>$count]);
     }
 
     public function review()
@@ -27,7 +33,13 @@ class MainController extends Controller
 
     public function ourContacts()
     {
-        return view('ourContacts');
+        $reviews = new ContactDB();
+        $countReview = $reviews->all();
+        $count = 0;
+        foreach ($countReview as $c){
+            $count++;
+        }
+        return view('ourContacts', ['count'=>$count]);
     }
 
     public function review_check(Request $request)
@@ -44,9 +56,18 @@ class MainController extends Controller
         $review->email = $request->input('email');
         $review->subject = $request->input('subject');
         $review->message = $request->input('message');
+        $review->created_at = date("Y-m-d H:i");
 
         $review->save();
 
         return redirect()->route('review');
+    }
+
+    function cmp($a, $b)
+    {
+        if ($a["date"] == $b["date"]) {
+            return 0;
+        }
+        return (strtotime($a["date"]) < strtotime($b["date"])) ? -1 : 1;
     }
 }

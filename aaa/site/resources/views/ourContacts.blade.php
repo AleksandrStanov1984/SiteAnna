@@ -8,7 +8,7 @@
         <h1 class="display-4">Студия Красоты Анны Милишь</h1>
         <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
         <a class="btn btn-warning" href="review">
-            <span class="badge badge-light">5</span>
+            <span class="badge badge-light">{{$count}}</span>
             Отзывы..
         </a>
     </div>
@@ -51,7 +51,7 @@
     </div>
 
     <div style="text-align: center">
-        <address>
+        <address style="font-size: 16px; color: #ffb700">
             г. Одесса <br>
             ж/м Радужный <br>
             ул. Гранитная 1/3<br>
