@@ -382,9 +382,9 @@
     <div class="col-md-3">
         @foreach($reviews as $el)
             <div class="direct-chat-info clearfix">
-                <span class="direct-chat-name pull-left">{{$el->created_at}}</span><br>
-                <span class="direct-chat-name pull-left">{{$el->subject}}</span>
-                <span class="direct-chat-timestamp pull-right">{{$el->name}}</span>
+                <span class="direct-chat-name pull-left">Тема отзыва: {{$el->subject}}</span><br>
+                <span class="direct-chat-name pull-left">{{$el->name}}</span>
+                <span class="direct-chat-timestamp pull-right" style="font-size: 10px;">{{$el->created_at}}</span>
             </div>
             <img class="direct-chat-img" src="https://bootdey.com/img/Content/user_1.jpg" alt="Message User Image">
             <div class="direct-chat-text" style="width: 70em; font-size: 15px">

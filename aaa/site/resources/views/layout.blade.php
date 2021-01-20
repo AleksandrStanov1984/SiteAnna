@@ -105,7 +105,7 @@
 <div style="font-family:Verdana, Arial, 'Harlow Solid Italic', sans-serif; font-style: italic; font-size: 15px"
      class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-dark text-white border-bottom shadow-sm">
     <h5 class="my-0 mr-md-auto font-weight-normal " data-toggle="tooltip" data-placement="top"
-        title="Студия Красоты Анны Милишь">Студия Красоты Анны Милиш</h5>
+        title="Студия Красоты Анны Милиш">Студия Красоты Анны Милиш</h5>
     <nav class="my-2 my-md-0 mr-md-3">
         <a class="p-2 text-white" href="home" data-toggle="tooltip" data-placement="top" title="Главная">Главная</a>
         <a class="p-2 text-white" href="#" data-toggle="tooltip" data-placement="top"
