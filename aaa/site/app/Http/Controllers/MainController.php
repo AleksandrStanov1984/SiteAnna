@@ -39,7 +39,7 @@ class MainController extends Controller
         foreach ($countReview as $c){
             $count++;
         }
-        return view('ourContacts', ['count'=>$count]);
+        return view('ourContacts', ['count' => $count]);
     }
 
     public function review_check(Request $request)
